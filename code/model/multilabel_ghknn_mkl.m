@@ -5,8 +5,8 @@ function [y_pred, y_score] = multilabel_ghknn_mkl(train_x_list, train_y, test_x_
 % @Input:
 %   train_x_list: list of different training features to calculate different kernels (list of matrix m*d, m: number of training samples, d: dimension of feature);
 %       (train_x_list = cell(1, n_features))
-%   train_y: corresponding training labels ( list of matrix m*c, c: multiple classes of labels);
-%   test_x_list: list of testing samples (matrix of n*d, n: number of testing samples);
+%   train_y: corresponding training labels (matrix m*c, c: multiple classes of labels);
+%   test_x_list: list of testing samples (list of matrix of n*d, n: number of testing samples);
 %   k_nn: parameter of k nearest neighbors;
 %   lammda: parameter of L-2 norm regularization term (0.1);
 %   gamma_list: list of parameters of RBF kernel function;
